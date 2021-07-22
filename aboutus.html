@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Petite Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+
+
+<div class="header">
+ <img src="images/logo.png" alt="Petite Bakery">
+</div>
+
+<div id="navbar">
+	<div class="topnav">
+		<a href=index.html>Home</a>
+		<a class="active" href=aboutus.html>About Us</a>
+		<a href=menu.html>Menu</a>
+		<a href=enquiries.html>Enquiries</a>
+	</div>
+</div>
+
+
+<table class="center" style="width:70%">
+  <tr class="about">
+  <th class="about">Name</th>
+	<td class="about">Picture</td> 
+  </tr>
+  <tr class="about">
+  <th class="about">Nur Aishah Hanim (Owner)</th> 
+    <td class="about"><img src="images/aishah.jpg" style="width:20%"></td>
+  </tr>
+  <tr class="about">
+    <th class="about">Siti Nor Amira (Head Chef)</th> 
+   	<td class="about"><img src="images/mira.jpeg" style="width:20%"></td>
+  </tr>
+  <tr class="about">
+    <th class="about">Sarah Nur Ain (Chef)</th>  
+	<td class="about"><img src="images/sarah.jpeg" style="width:20%"></td>
+  </tr>
+  <tr class="about">
+   <th class="about">Syafiqa Nadhirah (Head of Operation)</th> 
+	<td class="about"><img src="images/syafiqa.jpeg" style="width:20%"></td>
+  </tr>
+  </table>
+  
+  
+  <table class="icon" style="width:70%">
+  <tr class="socialmedia">
+  <th class="socialmedia"><img src="images/email-icon.png" width="50px"></th>
+	<td class="socialmedia"><img src="images/instagram-icon.jpg"width="50px"></td> 
+	<td class="socialmedia"><img src="images/facebook-icon.png" width="50px"></td> 
+  </tr>
+   <tr class="socialmedia">
+  <th class="socialmedia">Petite Bakery</th>
+	<td class="socialmedia">Petite Bakery</td> 
+	<td class="socialmedia">Petite Bakery</td> 
+  </tr>
+  </table>
+  
+  
+  
+ <div class="open"> 
+  <h2 class="open">OPENING HOURS</h2>
+  <p class="open">SUNDAY    9:00 AM - 10:00 PM</p>
+  <p class="open">MONDAY    9:00 AM - 10:00 PM</p>
+  <p class="open">TUESDAY   9:00 AM - 10:00 PM</p>
+  <p class="open">WEDNESDAY 9:00 AM - 10:00 PM</p>
+  <p class="open">THURSDAY  9:00 AM - 10:00 PM</p>
+  <p class="open">FRIDAY    9:00 AM - 10:00 PM</p>
+  <p class="open">SATURDAY  9:00 AM - 10:00 PM</p>
+  
+  <h2 class="open">LOCATION</h2>
+  <p class="open">Jalan Sri Cemerlang, Taman Desa Jasa, 15400 Kota Bharu, Kelantan</p>
+  
+  </div>
+  
+  
+  
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Petite Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+
+
+<div class="header">
+ <img src="images/logo.png" alt="Petite Bakery">
+</div>
+
+<div id="navbar">
+	<div class="topnav">
+		<a class="active" href=index.html>Home</a>
+		<a href=aboutus.html>About Us</a>
+		<a href=menu.html>Menu</a>
+		<a href=enquiries.html>Enquiries</a>
+	</div>
+</div>
+
+
+<div class="intro">
+<h4>STRESSED IS DESSERTS SPELLED BACKWARD - ANONYMOUS</h4>
+<h2>PETITTE BAKERY</h2>
+<p>At Petite Bakery, our desserts are made from scratch and baked freshly daily without any preservations to guarantee freshness and healthiness. </p> 
+<p>We only using the finest, freshest and best ingredients in our bakeries.</p>
+</div>
+
+<div class="desserts">
+<img src="images/menu.png" class="menu" alt="Menu">
+
+<table>
+  <tr class="picmenu">
+    <th><a href=menu.html><img src="images/1.png" style="width:80%"></a></th>
+    <th><a href=menu.html><img src="images/2.png" style="width:80%"></a></th>
+    <th><a href=menu.html><img src="images/3.png" style="width:80%"></a></th>
+	<th><a href=menu.html><img src="images/4.png" style="width:80%"></a></th>
+	<th><a href=menu.html><img src="images/5.png" style="width:80%"></a></th>
+  </tr>
+  <tr >
+    <td><a class="linkmenu" href=menu.html>Cakes</a></td>
+    <td><a class="linkmenu" href=menu.html>Cookies</a></td>
+    <td><a class="linkmenu" href=menu.html>Pastries</a></td>
+	<td><a class="linkmenu" href=menu.html>Macaroon</a></td>
+    <td><a class="linkmenu" href=menu.html>Tart</a></td>
+  </tr>
+ </table>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

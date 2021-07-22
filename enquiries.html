@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Petite Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+
+
+<div class="header">
+ <img src="images/logo.png" alt="Petite Bakery">
+</div>
+
+<div id="navbar">
+	<div class="topnav">
+		<a href=index.html>Home</a>
+		<a href=aboutus.html>About Us</a>
+		<a href=menu.html>Menu</a>
+		<a class="active" href=enquiries.html>Enquiries</a>
+	</div>
+</div>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Enter name..">
+
+    <label for="mnumber">Mobile</label>
+    <input type="text" id="mnumber" name="mobilenumber" placeholder="Mobile number..">
+	
+	<label for="email">Email Address</label>
+    <input type="text" id="email" name="emailaddress" placeholder="Enter email..">
+
+    <label for="area">Area</label>
+    <select id="area" name="area">
+      <option value="kota bharu">Kota Bharu</option>
+      <option value="tanah merah">Tanah Merah</option>
+      <option value="machang">Machang</option>
+	  <option value="pasir puteh">Pasir Puteh</option>
+	  <option value="pasir mas">Pasir Mas</option>
+	  <option value="jeli">Jeli</option>
+    </select>
+
+    <label for="Message/Special Requirements">Message/ Special Requirements</label>
+    <textarea id="Message/ Special Requirements" name="Message/ Special Requirements" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Petite Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/javascript.js"></script>
+</head>
+<body>
+
+
+
+<div class="header">
+ <img src="images/logo.png" alt="Petite Bakery">
+</div>
+
+<div id="navbar">
+	<div class="topnav">
+		<a href=index.html>Home</a>
+		<a href=aboutus.html>About Us</a>
+		<a class="active" href=menu.html>Menu</a>
+		<a href=enquiries.html>Enquiries</a>
+	</div>
+</div>
+
+
+<div class="row"> 
+  <div class="column">
+  <img src="images/6.jpg" style="width:100%">
+  <img src="images/7.jpg" style="width:100%">
+  <img src="images/8.jpg" style="width:100%">
+  </div>
+  <div class="column">
+  <img src="images/9.jpg" style="width:100%">
+  <img src="images/10.jpg" style="width:100%">
+  </div>  
+
+
+</div>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
